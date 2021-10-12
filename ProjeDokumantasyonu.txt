@@ -1,0 +1,19 @@
+1: Proje N-Tier mimari paternine göre yazýlacaktýr.
+
+2: Projede açýlacak katmanlar
+
+-Entities
+-Map
+-DAL
+-BLL
+-Common,(Ortak kullanýlacak sýnýflarýn tutulacaðý katman olacaktýr.)
+-API (Projemizi dýþarý açmak istediðimiz için açtýðýmýz ayrý bir katmandýr.)
+-DTO (API'daki esnekliðimizin proje bazlý artmasý için açacaðýmýz katmandýr)
+
+3: Projede deðiþken isimleri local variable olduðu sürece camelCase; field olduðu sürece baþýnda "_" olmak üzere camelCase; Property, metot ve class isimleri PascalCase standartlarýnda yazýlacaktýr ve projede Türkçe karakter kullanýlmayacaktýr
+
+4: Katman isimleri Project ile baþlayarak "." sembolünden sorna katmansal takýlarla bitecektir. (Project.ENTITIES)
+
+5: Tasarým paternlerinden Generic Repository, Singleton Pattern ve Strategy pattern kesinlikle kullanýlacaktýr. Mevcut algoritmada bu Tasarým patternlerinin dýþýnda baþka bir tasarým patterni öngörülmemektedir. Ancak projenin esnekliði buna elveriþli olduðundan eðer çok gerekli görülürse N-Tier ile uyumlu çalýþan diðer tasarým patternleri de rahatça eklenebilecektir.
+
+(Kendi proje fikrinizi yazýyorsanýz bu teknik dökümana ek olarak projede tam olarak ne yapmak istediðinizi, kullanýcýnýzn projenizi nasýl kullanacaðýný anlatan bir sayfalýk bir döküman daha yazýn)
