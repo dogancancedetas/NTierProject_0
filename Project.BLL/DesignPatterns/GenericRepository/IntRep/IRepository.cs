@@ -20,13 +20,13 @@ namespace Project.BLL.DesignPatterns.GenericRepository.IntRep
         //Modification Commands
 
         void Add(T item);
-        void AddRange(List<T> item);
+        void AddRange(List<T> list);
         void Delete(T item);
-        void DeleteRange(List<T> item);
+        void DeleteRange(List<T> list);
         void Destroy(T item);
-        void DestroyRange(List<T> item);
+        void DestroyRange(List<T> list);
         void Update(T item);
-        void UpdateRange(List<T> item);
+        void UpdateRange(List<T> list);
 
         //Expression Commands
 
