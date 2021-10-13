@@ -12,7 +12,7 @@ namespace Project.DAL.Context
 {
     public class MyContext: DbContext
     {
-        public MyContext():base("MyConnection")
+        public MyContext():base("MyAuthConnection")
         {
             Database.SetInitializer(new MyInit());
         }
