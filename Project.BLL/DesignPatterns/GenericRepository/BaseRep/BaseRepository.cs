@@ -29,9 +29,9 @@ namespace Project.BLL.DesignPatterns.GenericRepository.BaseRep
             _db.Set<T>().Add(item);
         }
 
-        public void AddRange(List<T> item)
+        public void AddRange(List<T> list)
         {
-            _db.Set<T>().AddRange(item);
+            _db.Set<T>().AddRange(list);
             Save();
         }
 
