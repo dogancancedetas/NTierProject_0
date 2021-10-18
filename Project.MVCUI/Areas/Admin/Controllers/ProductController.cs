@@ -40,8 +40,8 @@ namespace Project.MVCUI.Areas.Admin.Controllers
             };
             return View(pvm);
         }
-        [HttpPost]
 
+        [HttpPost]
         public ActionResult AddProduct(Product product, HttpPostedFileBase resim)
         {
             product.ImagePath = ImageUploader.UploadImage("/Pictures/", resim);
@@ -51,6 +51,7 @@ namespace Project.MVCUI.Areas.Admin.Controllers
 
         public ActionResult UpdateProduct(int id)
         {
+            //resim == null
             ProductVM pvm = new ProductVM
             {
                 Product = _pRep.Find(id),

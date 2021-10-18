@@ -10,5 +10,10 @@ namespace Project.BLL.DesignPatterns.GenericRepository.ConcRep
 {
     public class ProductRepository: BaseRepository<Product>
     {
+        //public override void Update(Product item)
+        //{
+        //    Product toBeUpdated = Find(item.ID);
+        //    item.ImagePath = toBeUpdated.ImagePath;
+        //}
     }
 }
